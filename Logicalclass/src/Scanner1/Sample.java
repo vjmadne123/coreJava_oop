@@ -16,16 +16,19 @@ public class Sample {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub;
 		
-		Scanner sc =new Scanner(System.in);
+		
+		//@SuppressWarnings("resource")
+		//@SuppressWarnings("resource")
+		Scanner scn =new Scanner(System.in);
+		
 		System.out.println("enter a size :-");
-		int n=sc.nextInt();
+		int n=scn.nextInt();
 		int[] num=new int[n];
 		System.out.println("enter array element:-");
 		for(int i=0; i<=n-1; i++)
 		{
-			num[i]=sc.nextInt();
+			num[i]=scn.nextInt();
 		}
 		System.out.println(sum(num));
 		
